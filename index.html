@@ -2,7 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Phuc Linh Web</title>
+        <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png" type="image/x-icon" />
         <link rel="stylesheet" href="./assets/css/style.css">
         <link rel="stylesheet" href="./assets/icon/themify-icons/themify-icons.css">
     </head>
@@ -11,27 +13,31 @@
         <div id="main">
             <div id="header">
                 <ul id="nav">
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">BAND</a></li>
-                    <li><a href="">TOUR</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#band">BAND</a></li>
+                    <li><a href="#tour">TOUR</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                     <li>
-                        <a href="">MORE
+                        <a href="#">MORE
                             <i class="iconone ti-angle-down"></i>
                         </a>
                         
                         
                         <ul class="subnav">
-                            <li><a href="">Merchandise</a></li>
-                            <li><a href="">Extras</a></li>
-                            <li><a href="">Media</a></li>
+                            <li><a href="#">Merchandise</a></li>
+                            <li><a href="#">Extras</a></li>
+                            <li><a href="#">Media</a></li>
                         </ul>
                     </li>
                 </ul>
                 <!--end nav-->
+                <div id="mobile-menu" class="menu-mobile-btn">
+                    <i class="menu-icon ti-menu"></i>
+                </div>
                 <div class="icontwo">
                     <i class="ti-search"></i>
                 </div>
+                
             </div>
 
             <div id="slider">
@@ -43,7 +49,7 @@
 
             <div id="content">
                 <!--ABOUT-->
-                <div class="text-content">
+                <div class="text-content" id="band">
                     <h2 class="textone-content">THE BAND</h2>
                     <p class="texttwo-content"><i>We love music</i></p>
                     <p class="textthree-content">We have created a fictional band website.
@@ -56,15 +62,15 @@
                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
                     <div class="row member-list">
-                        <div class="col col-third text-center">
+                        <div class="member-item s-col-full mt-16 col col-third text-center">
                             <p class="member-name">NAME</p>
                             <img src="./assets/css/img/contentimg.jpg" alt="" class="member-img">
                         </div>
-                        <div class="col col-third text-center">
+                        <div class="member-item s-col-full mt-16 col col-third text-center">
                             <p class="member-name">NAME</p>
                             <img src="./assets/css/img/contentimg.jpg" alt="" class="member-img">
                         </div>
-                        <div class="col col-third text-center">
+                        <div class="member-item s-col-full mt-16 col col-third text-center">
                             <p class="member-name">NAME</p>
                             <img src="./assets/css/img/contentimg.jpg" alt="" class="member-img">
                         </div>
@@ -74,7 +80,7 @@
                 </div>
 
                 <!--TOUR SECTION-->
-                <div class="tour-section">
+                <div class="tour-section" id="tour">
                     <div class="text-content">
                         <h2 class="textone-content text-white">TOUR DATES</h2>
                         <p class="texttwo-content text-white"><i>Remember to book your tickets!</i></p>
@@ -85,31 +91,31 @@
                         </ul>
                         <!--Place list-->
                         <div class="row places-list">
-                            <div class="col col-third place-item">
+                            <div class="col col-third place-item s-col-full mt-16 ">
                                 <img src="./assets/css/img/new-york.jpg" alt="New York" class="place-img">
                                 <div class="place-noidung">
                                     <h3 class="place-name">New York</h3>
                                     <p class="place-text">Fri 27 Nov 2016</p>
                                     <p class="place-content">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                    <button class="place-button js-buy-tickets">Buy Tickets</button>
+                                    <button class="place-button full-width js-buy-tickets">Buy Tickets</button>
                                 </div>
                             </div>
-                            <div class="col col-third place-item">
+                            <div class="col col-third place-item s-col-full mt-16">
                                 <img src="./assets/css/img/paris.jpg" alt="Paris" class="place-img">
                                 <div class="place-noidung">
                                     <h3 class="place-name">Paris</h3>
                                     <p class="place-text">Sat 28 Nov 2016</p>
                                     <p class="place-content">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                    <button class="place-button js-buy-tickets">Buy Tickets</button>
+                                    <button class="place-button full-width js-buy-tickets">Buy Tickets</button>
                                 </div>
                             </div>
-                            <div class="col col-third place-item">
+                            <div class="col col-third place-item s-col-full mt-16">
                                 <img src="./assets/css/img/sanfran.jpg" alt="San Francisco" class="place-img">
                                 <div class="place-noidung">
                                     <h3 class="place-name">San Francisco</h3>
                                     <p class="place-text">Sun 29 Nov 2016</p>
                                     <p class="place-content">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                    <button class="place-button js-buy-tickets">Buy Tickets</button>
+                                    <button class="place-button full-width js-buy-tickets ">Buy Tickets</button>
                                 </div>
                             </div>
                             <div class="clear"></div>
@@ -121,38 +127,43 @@
                 </div>
 
                 <!--CONTACT-->
-                <div class="text-content">
+                <div class="text-content" id="contact">
                     <h2 class="textone-content">CONTACT</h2>
                     <p class="texttwo-content"><i>Fan? Drop a note!</i></p>
                     <div class="row contact-content">
-                        <div class="col col-half contact-info ">
+                        <div class="col col-half s-col-full contact-info ">
                             <p><i class="ti-location-pin" ></i> Chicago, US</p>
                             <p><i class="ti-mobile" ></i> Phone: +00 151515</p>
                             <p><i class="ti-email" ></i> Email: mail@mail.com</p>
                         </div>
-                        <div class="col col-half contact-form">
+                        <div class="col col-half s-col-full contact-form">
                             <form action="">
 
                                 <div class="row">
-                                    <div class="col col-half ">
+                                    <div class="col col-half s-col-full  ">
                                         <input type="text" name=""  placeholder="Name" required  id="" class="form-control">
                                     </div>
-                                    <div class="col col-half">
+                                    <div class="col col-half s-col-full s-mt8 ">
                                         <input type="email" name=""  placeholder="Email" required  id="" class="form-control">
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col col-full mt-8">
+                                    <div class="col col-full s-col-full mt-8 ">
                                         <input type="text" name=""  placeholder="Message" required  id="" class="form-control">
                                     </div>
                                 </div>
-                                <button type="submit" value="SEND" class="contact-form-button">SEND</button>
+                                <button type="submit" value="SEND" class="contact-form-button full-width">SEND</button>
                             </form>
                             
                         </div>
 
                     </div>
                 </div>   
+                <!--END CONTACT-->
+
+                <div class="map-section" id="map">
+                    <img src="./assets/css/img/map.jpg" alt="">
+                </div>
             </div>
 
             <div class="modal js-modal">
@@ -184,11 +195,20 @@
             </div>
 
             <div id="footer">
-
+                <div class="icon-mxh">
+                    <a href=""><i class="ti-facebook"></i></a>
+                    <a href=""><i class="ti-instagram"></i></a>
+                    <a href=""><i class="ti-apple"></i></a>
+                    <a href=""><i class="ti-pinterest"></i></a>
+                    <a href=""><i class="ti-twitter"></i></a>
+                    <a href=""><i class= "ti-linkedin"></i></a>
+                   
+                </div>
+                <p class="footer-medium">Powered by <a href="" class="footer-hr">w3.css</a></p>
             </div>
         </div>
         <script>
-
+            // xử lí nút bấm buy
             const BuyBtns = document.querySelectorAll('.js-buy-tickets')
             const modal = document.querySelector('.js-modal')
             const close = document.querySelector('.js-modal-close')
@@ -210,6 +230,34 @@
             ModalContainer.addEventListener('click', function(event){
                 event.stopPropagation()
             })
+
+            // đóng mở menu mobile
+            var header = document.getElementById('header'); // lấy id header
+            var mobileMenu = document.getElementById('mobile-menu');
+            var headerHeight = header.clientHeight; //lấy giá trị chiều cao ban đầu
+
+            mobileMenu.onclick = function(){
+                var isClosed = header.clientHeight === headerHeight; 
+                if(isClosed){
+                    header.style.height = 'auto';
+                }else{
+                    header.style.height = null; // ẩn menu
+                }
+            }
+        // tự động đóng khi chọn menu
+            var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
+            for(var i = 0 ; i < menuItems.length ; i++){
+                var menuItem = menuItems[i];
+                menuItem.onclick = function(){
+                    var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav')  //click vào thẻ có anh em liền kề và có anh em liền kề có class tồn tại 
+                    if(isParentMenu){
+                        event.preventDefault();
+                    }else{
+                        header.style.height = null;  //click vào item trong menu ẩn menu
+
+                    }
+                }
+            }
         </script>
     </body>
 </html>
